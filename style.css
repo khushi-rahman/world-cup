@@ -63,6 +63,7 @@ header {
     color: #ffffff;
     margin-right: 10px;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .header-section-text button ion-icon {
@@ -104,10 +105,10 @@ header {
 }
 
 .button-section {
-    width: 25%;
+    width: 22%;
     height: 307px;
     background-color: #0a0a0a;
-    padding-left: 20px;
+    padding: 0 10px;
     border-radius: 10px;
 }
 
@@ -119,6 +120,8 @@ header {
     margin-bottom: 33px;
     padding: 20px 40px;
     border-radius: 10px;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
 .button-1 a {
@@ -139,14 +142,14 @@ header {
     overflow: scroll;
     overflow-x: hidden;
     display: grid;
-    grid-template-columns: repeat(3, 30%);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     row-gap: 20px;
     column-gap: 10px;
     scrollbar-width: none;
 }
 
-::-webkit-scrollbar {
+.grid-sections::-webkit-scrollbar {
     display: none;
 }
 
@@ -283,7 +286,6 @@ hr {
     border-radius: 15px;
     height: 246px;
     text-align: center;
-    width: 100%;
 }
 
 .img-section {
@@ -319,4 +321,47 @@ hr {
 
 .header-section-text button {
     display: flex;
+}
+
+
+/*============start mediaquery=========*/
+
+
+/*========responsive for medium device=========*/
+
+@media screen and (min-width:577px) and ( max-width:992px) {
+    .container2 {
+        display: block;
+    }
+    .button-section {
+        margin: 0;
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        background-color: transparent;
+        margin-bottom: 29px;
+    }
+    .button-1 {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #dfcfcf;
+        margin-left: 10px;
+    }
+    .grid-sections {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .active {
+        border: none;
+    }
+    .footer-present ul li a {
+        font-size: 12px;
+    }
 }
