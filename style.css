@@ -122,6 +122,17 @@
                                                                                             .header-section-img img {
                                                                                                 height: 95%;
                                                                                                 z-index: 1;
+                                                                                                animation: zooming 5s ease-in-out .10s infinite alternate;
+                                                                                                animation-play-state: running;
+                                                                                            }
+                                                                                            
+                                                                                            @keyframes zooming {
+                                                                                                from {
+                                                                                                    transform: scale(.9);
+                                                                                                }
+                                                                                                to {
+                                                                                                    transform: scale(1.0);
+                                                                                                }
                                                                                             }
                                                                                             /*==========header section end==========*/
                                                                                             
