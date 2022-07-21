@@ -62,13 +62,15 @@
                                                                                                 padding: 15px 30px;
                                                                                                 background-color: #dd0000;
                                                                                                 border-radius: 5px;
-                                                                                                align-items: center;
-                                                                                                align-items: center;
-                                                                                                color: #ffffff;
-                                                                                                margin-right: 10px;
-                                                                                                font-size: 16px;
                                                                                                 cursor: pointer;
                                                                                                 border: none;
+                                                                                                align-items: center;
+                                                                                                font-size: 16px;
+                                                                                                color: #ffffff;
+                                                                                            }
+                                                                                            
+                                                                                            .btn-1 {
+                                                                                                transition: .6s;
                                                                                             }
                                                                                             
                                                                                             .header-section-text button ion-icon {
@@ -86,6 +88,31 @@
                                                                                             
                                                                                             .header-section-img img {
                                                                                                 height: 95%;
+                                                                                                z-index: 1;
+                                                                                            }
+                                                                                            
+                                                                                            .ball {
+                                                                                                display: none;
+                                                                                                width: 100px;
+                                                                                                height: 100px;
+                                                                                                border-radius: 50%;
+                                                                                                margin-top: 11%;
+                                                                                                margin-right: -150px;
+                                                                                                position: absolute;
+                                                                                                z-index: 100;
+                                                                                                transition: transform 1s ease-out;
+                                                                                                background: linear-gradient(#f9ca24, #6ab04c);
+                                                                                            }
+                                                                                            /*========================
+                                                                                                hover and animation
+                                                                                                ===========================*/
+                                                                                            
+                                                                                            .container:hover .ball {
+                                                                                                transform: scale(1.0) translate(150px, 350px);
+                                                                                            }
+                                                                                            
+                                                                                            .btn-1:hover {
+                                                                                                transform: scale(1.1);
                                                                                             }
                                                                                             /*==========header section end==========*/
                                                                                             
@@ -123,6 +150,11 @@
                                                                                                 margin-left: 10px;
                                                                                                 cursor: pointer;
                                                                                                 margin-top: 20px;
+                                                                                                transition: transform .6s;
+                                                                                            }
+                                                                                            
+                                                                                            .button-1:hover {
+                                                                                                transform: scale(0.9);
                                                                                             }
                                                                                             
                                                                                             .button-1 a {
@@ -165,6 +197,10 @@
                                                                                                 margin: 20px 0;
                                                                                             }
                                                                                             
+                                                                                            .grid-1:hover .match-info img {
+                                                                                                transform: scale(1.1);
+                                                                                            }
+                                                                                            
                                                                                             .match-info-text h4 {
                                                                                                 font-size: 16px;
                                                                                                 text-transform: capitalize;
@@ -173,21 +209,32 @@
                                                                                             
                                                                                             .match-info img {
                                                                                                 width: 100%;
+                                                                                                transition: transform .6s;
+                                                                                                display: block;
+                                                                                            }
+                                                                                            
+                                                                                            .match-info {
+                                                                                                overflow: hidden;
+                                                                                                border-radius: 5px;
                                                                                             }
                                                                                             
                                                                                             .match-info-text button {
-                                                                                                padding: 0 20px;
+                                                                                                padding: 10px 30px;
                                                                                                 background-color: #ffffff;
                                                                                                 margin: 20px 0;
                                                                                                 border-radius: 5px;
                                                                                                 border: 1px solid #0a0a0a;
-                                                                                            }
-                                                                                            
-                                                                                            .match-info-text button a {
-                                                                                                color: #0a0a0a;
+                                                                                                color: #970101;
                                                                                                 text-transform: capitalize;
                                                                                                 font-size: 16px;
-                                                                                                font-weight: 400;
+                                                                                                font-weight: bold;
+                                                                                                transition: transform .6s;
+                                                                                            }
+                                                                                            
+                                                                                            .match-info-text button:hover {
+                                                                                                background-color: #dd0000;
+                                                                                                color: #d3c9c9;
+                                                                                                border: none;
                                                                                             }
                                                                                             
                                                                                             .match-info-text ul {
@@ -269,12 +316,22 @@
                                                                                             
                                                                                             .footer-present ul li {
                                                                                                 margin: 25px;
+                                                                                                transition: transform .6s;
                                                                                             }
                                                                                             
                                                                                             .footer-present ul li a {
                                                                                                 color: #d3c9c9;
                                                                                                 text-transform: capitalize;
                                                                                                 font-size: 1.3vw;
+                                                                                                transition: transform .6s;
+                                                                                            }
+                                                                                            
+                                                                                            .footer-present ul li:hover {
+                                                                                                transform: scale(.9);
+                                                                                            }
+                                                                                            
+                                                                                            .footer-present ul li a:hover {
+                                                                                                color: #dd0000;
                                                                                             }
                                                                                             
                                                                                             .footer-icon ul {
@@ -285,11 +342,21 @@
                                                                                             
                                                                                             .footer-icon ul li {
                                                                                                 margin: 15px;
+                                                                                                transition: transform .6s;
+                                                                                            }
+                                                                                            
+                                                                                            .footer-icon ul li :hover {
+                                                                                                transform: scale(1.1);
                                                                                             }
                                                                                             
                                                                                             .footer-icon ul li a {
                                                                                                 color: #d3c9c9;
                                                                                                 font-size: 25px;
+                                                                                                transition: transform .6s;
+                                                                                            }
+                                                                                            
+                                                                                            .footer-icon ul li a:hover {
+                                                                                                color: cadetblue;
                                                                                             }
                                                                                             /*========================index .html footer end=========================*/
                                                                                             /*==================================
@@ -456,7 +523,6 @@
                                                                                                 .navigation UL {
                                                                                                     display: flex;
                                                                                                     margin-right: 50PX;
-                                                                                                    mar
                                                                                                 }
                                                                                                 .navigation ul li ion-icon {
                                                                                                     margin-right: 20PX;
