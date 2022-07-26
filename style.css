@@ -481,7 +481,7 @@
                                                                                                     }
                                                                                                     35% {
                                                                                                         transform: scale(1.1);
-                                                                                                        top: 595px;
+                                                                                                        top: 585px;
                                                                                                         background: linear-gradient(#f9ca24, #6ab04c);
                                                                                                     }
                                                                                                     100% {
@@ -584,7 +584,7 @@
                                                                                                     }
                                                                                                     45% {
                                                                                                         transform: scale(1.1);
-                                                                                                        top: 830px;
+                                                                                                        top: 780px;
                                                                                                         background: linear-gradient(#f9ca24, #6ab04c);
                                                                                                     }
                                                                                                     100% {
